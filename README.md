@@ -45,6 +45,23 @@ The coursework uses the Brown Corpus, English web text, and Urdu text resources.
 
 ## Results
 
+### Language Model Perplexity Comparison
+
+| Model | Fiction | Romance |
+|---|---:|---:|
+| Unigram | 10.1981 | 14.1140 |
+| Smoothed Unigram (Laplace) | 1408.8456 | 1328.2123 |
+| Bigram | 4.1392 | 4.2556 |
+| Smoothed Bigram (Laplace) | 3616.9912 | 3446.2366 |
+
+### Preliminary Findings
+
+The unsmoothed bigram model produced the lowest reported perplexity on both evaluation sets. Laplace-smoothed models showed considerably higher perplexity values.
+
+These results are preliminary. The perplexity implementation, unseen n-gram handling, and evaluation consistency require validation before drawing definitive conclusions.
+
+Additional repository outputs include generated sentences, Urdu segmentation results, and n-gram analysis artifacts.
+
 The repository contains generated language model outputs, Urdu segmentation results, and analysis artifacts.
 
 Quantitative results and interpretation will be documented after verification of the executable notebook.
